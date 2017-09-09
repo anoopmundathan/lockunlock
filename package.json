@@ -7,8 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
     "watch": "gulp watch",
-    "start": "npm run build && node index.js",
-    "dev": "npm run build && nodemon index.js"
+    "start": "node index.js",
+    "dev": "npm run build && nodemon index.js",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false && npm install --only=dev --dev",
+    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true && npm run build"
+  },
+  "engines": {
+    "node": "v8.0.0"
   },
   "author": "Anoop Mundathan <anoop.mundathan@gmail.com> (http://anoopmundathan.me/)",
   "license": "ISC",
