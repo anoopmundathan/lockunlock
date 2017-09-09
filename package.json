@@ -1,0 +1,24 @@
+{
+  "name": "lockunlock",
+  "version": "1.0.0",
+  "description": "Lock Unlock App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "start": "npm run build && node index.js",
+    "dev": "npm run build && nodemon index.js"
+  },
+  "author": "Anoop Mundathan <anoop.mundathan@gmail.com> (http://anoopmundathan.me/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.15.4"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-uglify": "3.0.0"
+  }
+}
